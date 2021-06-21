@@ -36,6 +36,8 @@ MANIFEST
 # Credentials
 woo_credentials.py
 
+.DS_Store
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
