@@ -112,6 +112,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+env.sh
+
+# Setup file
+setup.py
 
 # Spyder project settings
 .spyderproject
