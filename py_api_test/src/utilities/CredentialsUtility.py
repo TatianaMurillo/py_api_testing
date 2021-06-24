@@ -1,6 +1,6 @@
 
 from py_api_test.src.configs.db_credentials import CREDENTIALS as DB_CREDENTIALS
-import woo_credentials as woo_credentials
+from py_api_test.src.woocredentials.woo_credentials import CREDENTIALS as WOO_CREDENTIALS
 
 
 class CredentialsUtility(object):
@@ -11,8 +11,8 @@ class CredentialsUtility(object):
     @staticmethod
     def get_wc_api_keys():
 
-        wc_key = woo_credentials["wc_key"]
-        wc_secret = woo_credentials["wc_secret"]
+        wc_key = WOO_CREDENTIALS["wc_key"]
+        wc_secret = WOO_CREDENTIALS["wc_secret"]
 
         if not wc_key or not wc_secret:
             raise Exception("The API credentials 'WC_KEY' and 'WC_SECRET' must be in env variable")
@@ -30,4 +30,3 @@ class CredentialsUtility(object):
             raise Exception("The DB credentials must be in env variables")
         else:
             return {'db_user': db_user, 'db_password': db_password, 'db_socket': db_socket, 'db_host': db_host}
-

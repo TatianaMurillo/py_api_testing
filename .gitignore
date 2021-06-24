@@ -34,7 +34,7 @@ MANIFEST
 *.spec
 
 # Credentials
-woo_credentials.py
+py_api_test/src/woocredentials/woo_credentials.py
 
 .DS_Store
 
